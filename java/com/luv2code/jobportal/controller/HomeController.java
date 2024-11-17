@@ -1,0 +1,31 @@
+package com.luv2code.jobportal.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+public class HomeController {
+
+    @GetMapping("/")
+    public String home(){
+        return "index";
+    }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @GetMapping("/freelancer")
+    public String freelancer() {
+        return "freelancer";
+    }
+
+    @GetMapping("/job")
+    public String job() {
+        return "job";
+    }
+
+
+}
